@@ -1,98 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Femto Films</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Police d'écriture -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- Ton CSS perso -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Ton CSS -->
   <link href="css/style.css" rel="stylesheet" />
 
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      background-color: black;
-    }
+    .remplissage {
+      height: 85vh;
 
-    main {
-      flex: 1;
     }
-
-    video {
-      object-fit: cover;
+    @media screen and (max-width: 767px) {
+      .remplissage {
+        height: 5vh; /* Ajustement pour les petits écrans */
+        z-index: 0;
+      }
     }
   </style>
 </head>
 
-<body class="text-white position-relative">
+<body class="d-flex flex-column min-vh-100">
 
-  <!-- NAVBAR transparente -->
+
+  <main class="flex-grow-1">
+
+  <!-- NAVBAR -->
   <div id="navbar-container"></div>
 
-  <!-- FOND VIDÉO EN PLEIN ÉCRAN -->
-  <video autoplay muted loop playsinline class="position-fixed top-0 start-0 w-100 h-100">
+  <!-- VIDÉO EN FOND (Desktop uniquement) -->
+  <video autoplay muted loop playsinline class="video-bg d-none d-md-block">
     <source src="videos/showreel_appareil_v1 (1080p).mp4" type="video/mp4">
   </video>
 
-  <div class="logo-gauche">
-    <img src="Images/Logo_FEMTO_I_Typo2_RICH_SEASHELL.png" alt="Femto Films" class="logo-img">
+
+  <!-- CONTENU CENTRÉ & RESPONSIVE -->
+  <div class="logo-wrapper logo-gauche text-center" style="z-index: 1;">
+    <img src="Images/Logo_FEMTO_I_Typo2_RICH_SEASHELL.png" alt="Femto Films" class="logo-img mb-2" />
     <p class="slogan">société de production audiovisuelle</p>
 
-    <div class="d-flex gap-3 mt-3">
+    <div class="d-flex gap-3 mt-3 flex-wrap justify-content-center justify-content-md-start">
+      <a class="nav-link text-white" href="fiction_V2.html">Fictions</a>
 
-      <!-- Lien Fictions -->
-      <a class="nav-link text-white px-0" href="fiction_V2.html">Fictions</a>
-
-      <!-- Menu déroulant Services -->
       <div class="dropdown">
-        <a class="nav-link dropdown-toggle text-white px-0" href="#" id="servicesDropdownSidebar" role="button"
+        <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown_2" role="button"
            data-bs-toggle="dropdown" aria-expanded="false">
           Services
         </a>
-        <ul class="dropdown-menu" aria-labelledby="servicesDropdownSidebar">
+        <ul class="dropdown-menu" aria-labelledby="servicesDropdown_2">
           <li><a class="dropdown-item" href="entreprise_V2.html">Professionnel</a></li>
           <li><a class="dropdown-item" href="particulier.html">Particulier</a></li>
         </ul>
       </div>
 
-      <!-- Menu déroulant À propos -->
       <div class="dropdown">
-        <a class="nav-link dropdown-toggle text-white px-0" href="#" id="aproposDropdownSidebar" role="button"
+        <a class="nav-link dropdown-toggle text-white" href="#" id="aproposDropdown_2" role="button"
            data-bs-toggle="dropdown" aria-expanded="false">
           À propos
         </a>
-        <ul class="dropdown-menu" aria-labelledby="aproposDropdownSidebar">
+        <ul class="dropdown-menu" aria-labelledby="aproposDropdown_2">
           <li><a class="dropdown-item" href="aboutus.html">Qui sommes-nous ?</a></li>
           <li><a class="dropdown-item" href="contact.html">Contact</a></li>
         </ul>
       </div>
-
     </div>
   </div>
-
-  <!-- ESPACE CENTRAL pour pousser le footer vers le bas -->
-  <main class="d-flex justify-content-center align-items-center">
-    <!-- Tu peux ajouter un bouton ou un titre ici -->
   </main>
 
   <!-- FOOTER -->
-  <div id="footer-container" class="position-relative"></div>
+<div id="footer-container" style="z-index: 3;"></div>
+  
 
-  <!-- Bootstrap JS + ton JS -->
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/include_navbar.js"></script>
 </body>

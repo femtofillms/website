@@ -41,9 +41,9 @@
 
     <!-- Bouton Burger pour mobile -->
     <button class="navbar-toggler text-white border-0 position-absolute end-0 me-3" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+<i class="bi bi-list fs-1"></i>
+</button>
   </div>
 </nav>
 
@@ -51,20 +51,29 @@
 <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="navbarOffcanvas"
      aria-labelledby="navbarOffcanvasLabel">
   <div class="offcanvas-header">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white ms-auto me-2 mt-2" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
   </div>
+
   <div class="offcanvas-body d-flex flex-column gap-4">
 
-    <!-- Section Projets -->
+    <!-- Menu Fiction -->
     <div>
       <div class="fw-bold text-uppercase text-secondary small mb-2">Projets</div>
-      <div class="d-flex flex-column gap-2 ps-3">
-        <a href="fiction_V2.html" class="text-white">Fictions</a>
-        <a href="entreprise_V2.html" class="text-white">Commercial</a>
+      <div class="ps-3">
+        <a href="fiction_V2.html" class="text-white">Fiction</a>
       </div>
     </div>
 
-    <!-- Section À propos -->
+    <!-- Menu Service -->
+    <div>
+      <div class="fw-bold text-uppercase text-secondary small mb-2">Services</div>
+      <div class="d-flex flex-column gap-2 ps-3">
+        <a href="entreprise_V2.html" class="text-white">Entreprise</a>
+        <a href="particulier.html" class="text-white">Particulier</a>
+      </div>
+    </div>
+
+    <!-- Menu À propos -->
     <div>
       <div class="fw-bold text-uppercase text-secondary small mb-2">À propos</div>
       <div class="d-flex flex-column gap-2 ps-3">
@@ -75,4 +84,5 @@
 
   </div>
 </div>
+
 
