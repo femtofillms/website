@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nos Fictions - Femto Films</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Bootstrap CSS (pour la modale) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+ <!-- Police d'écriture -->
+ <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <style>
+        body {
+            background-color: seashell;
+            color: white;
+            font-family: 'Source Sans 3', sans-serif; /* Application de la police */
+        }
+
+        .h1{
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 30px;
+            color: black;
+        }
+
+        .highlight {
+            color: #DB185C;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 15px 0;
+        }
+        .nav-link, .navbar-brand {
+            color: #FCF0ED !important;
+            font-size: 18px;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Red Rose', sans-serif;
+            color: #FCF0ED;
+        }
+
+        .swiper {
+            width: 100%;
+            border-top: 3px solid #DB185C;
+            border-bottom: 3px solid #DB185C;
+            box-shadow:
+                0 -6px 20px #DB185C88,
+                0 6px 20px #DB185C88;
+            border-radius: 0;
+            overflow: hidden;
+            background-color: seashell;
+}
+
+    .swiper-slide {
+      position: relative;
+      background-position: center;
+      background-size: cover;
+    }
+    .film-info {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out; /* durée augmentée à 0.8s */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 50px;
+}
+
+.film-info.active {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a class="nav-link me-5" href="/aboutus.html">À propos</a>
+            <a class="navbar-brand" href="/index.html">Femto Films</a>
+            <a class="nav-link ms-3" href="/contact.html">Contact</a>
+        </div>
+    </nav>
+
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide d-flex justify-content-center align-items-end" style="background-color: black;">
+        <picture class="w-100">
+          <!-- Affiche verticale 9:16 si écran trop petit -->
+          <source srcset="/Images/AFFICHE_RUPTUR_9_16_V2_LOW.jpg" media="(max-aspect-ratio: 9/10)">
+          
+          <!-- Affiche horizontale 16:9 par défaut -->
+          <img src="/Images/AFFICHE_RUPTUR_V2_16_9.png" alt="PULSION" class="img-fluid w-100" style="max-height: 80vh; object-fit: contain;">
+        </picture>
+      </div>
+
+       <!-- Slide 2 -->
+       <div class="swiper-slide d-flex justify-content-center align-items-end" style="background-color: black;">
+        <picture class="w-100">
+          <!-- Affiche verticale 9:16 si écran trop petit -->
+          <source srcset="/Images/AFFICHE_RUPTUR_9_16_V2_LOW.jpg" media="(max-aspect-ratio: 9/10)">
+          
+          <!-- Affiche horizontale 16:9 par défaut -->
+          <img src="/Images/AFFICHE_RUPTUR_9_16_V2_LOW.jpg" alt="PULSION" class="img-fluid w-100" style="max-height: 80vh; object-fit: contain;">
+        </picture>
+        <div class="container mt-4">
+          <div class="row">
+            <!-- Texte -->
+            <div class="col-md-6">
+              <h1 class="mx-auto w-75 pt-md-5">
+                Un thriller <span class="highlight">captivant</span> qui explore la fragilité des liens familiaux.
+              </h1>
+            </div>
+  
+            <!-- Vidéo YouTube -->
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/ID_DE_LA_VIDEO" title="RUPTUR bande-annonce" allowfullscreen></iframe>
+              </div>
+            </div>
+  
+          </div>            
+          
+        </div>
+        <script>
+          if(!window.picflow){window.picflow=!0;var s=document.createElement("script");
+          s.src="https://picflow.com/embed/main.js";s.type='module';
+          s.defer=true;document.head.appendChild(s);
+        }
+          </script>
+          
+      <div class="container">
+          <picflow-gallery id="gal_0XSLGpBggjEolcZz" tenant="tnt_jOeqorGZAp4BMzgk" lightbox="#000000E6" no-background="true"></picflow-gallery>
+      </div>
+      </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div id="filmDetailsContainer" class="p-4 position-relative" style="background-color: seashell; color: black; min-height: 400px;">
+    <div class="film-info" data-slide="0">
+      <div class="container mt-4">
+        <div class="row">
+          <!-- Texte -->
+          <div class="col-md-6">
+            <h1 class="mx-auto w-75 pt-md-5">
+              Un thriller <span class="highlight">captivant</span> qui explore la fragilité des liens familiaux.
+            </h1>
+          </div>
+
+          <!-- Vidéo YouTube -->
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/ID_DE_LA_VIDEO" title="RUPTUR bande-annonce" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>            
+        
+      </div>
+      <script>
+        if(!window.picflow){window.picflow=!0;var s=document.createElement("script");
+        s.src="https://picflow.com/embed/main.js";s.type='module';
+        s.defer=true;document.head.appendChild(s);
+      }
+        </script>
+
+    <div class="container">
+        <picflow-gallery id="gal_0XSLGpBggjEolcZz" tenant="tnt_jOeqorGZAp4BMzgk" lightbox="#000000E6" no-background="true"></picflow-gallery>
+    </div>
+                   
+    </div>
+  
+    <div class="film-info" data-slide="1">
+      <h2>PULSION</h2>
+      <p>Une plongée sensorielle dans les pulsions humaines, portée par une mise en scène immersive.</p>
+      <img src="/Images/tournage_pulsion1.jpg" alt="Tournage PULSION" class="img-fluid mb-3">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/ID_AUTRE_VIDEO" title="PULSION bande-annonce" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    });
+  
+    const allDetails = document.querySelectorAll('.film-info');
+  
+    function updateFilmDetails(index) {
+      allDetails.forEach((detail, i) => {
+        // Pour déclencher correctement la transition même si on repasse au même index
+        detail.classList.remove('active');
+      });
+  
+      // Attendre un court instant pour relancer proprement le fondu
+      setTimeout(() => {
+        const currentDetail = Array.from(allDetails).find(d => parseInt(d.dataset.slide) === index);
+        if (currentDetail) {
+          currentDetail.classList.add('active');
+        }
+      }, 50); // léger délai pour forcer le déclenchement de transition
+    }
+  
+    // Initialisation
+    updateFilmDetails(swiper.realIndex);
+  
+    swiper.on('slideChange', () => {
+      updateFilmDetails(swiper.realIndex);
+    });
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a propos</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Police d'écriture -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Ton CSS -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <style>
+    /* FOND D'ÉCRAN AVEC 2 IMAGES */
+    /* Conteneur pour le fond et le voile */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* Images de fond */
+.image-container {
+    text-align: center;
+    margin-top: 1px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease-out 0.5s forwards; /* Ajout d'un délai */
+}
+.image-container img {
+    max-width: 10%;
+    height: auto;
+}
+
+.bandeau-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.image-left,
+.image-right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-left {
+  background-image: url('/Images/SHOOT_MAX_2.jpg');
+}
+
+.image-right {
+  background-image: url('/Images/SHOOT_ANTOINE.jpg');
+}
+
+/* Voile noir semi-transparent */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Contenu texte */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30vh 25px 10px 25px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  text-align: justify;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    /* RESPONSIVE POUR LOGO */
+    @media (max-width: 576px) {
+      .image-container img {
+        max-width: 30%;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      .image-container img {
+        max-width: 15%;
+      }
+    }
+
+    a {
+      color: #DB185C;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- FOND ENTIÈREMENT FIXE EN DESSOUS -->
+  <div class="background-wrapper">
+    <div class="bandeau-images">
+      <div class="image-left"></div>
+      <div class="image-right"></div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <div id="navbar-container"></div>
+
+  <!-- CONTENU TEXTE -->
+  <div class="about-container">
+    <div class="mx-auto" style="max-width: 800px;">
+      <p><span class="highlight">Femto Films</span> est une société de production française basée dans les Bouches-du-Rhône, 
+        fondée par <strong>Antoine Biguet</strong> et <strong>Maxime Castello</strong>, 
+        deux amis passionnés d'image et de cinéma.</p>
+      <p>Chez <span class="highlight">Femto Films</span>, on écrit et réalise des projets pour :</p>
+      <ul>
+        <li><strong>Valoriser des produits et services</strong>, aider les entreprises à appuyer leur identité visuelle</li>
+        <li>Faire vivre une <strong>expérience cinématographique</strong> intense au travers de personnages et d'histoires uniques.</li>
+      </ul>
+    </div>
+    <div class="image-container mt-2">
+        <img src="/Images/Logo_FEMTO_I_icon_CLARET.png" alt="Logo">
+      </div>
+  </div>
+
+  <!-- LOGO CENTRÉ EN BAS -->
+
+
+  <!-- SCRIPTS -->
+  <script src="/js/include_navbar.js"></script>
+
+  <!-- FOOTER TOUJOURS EN BAS -->
+  <div id="footer-container" class="mt-auto"></div>
+
+</body>
+</html>

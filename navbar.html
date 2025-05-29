@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg bg-transparent text-white px-3 py-2 position-absolute top-0 start-0 w-100 z-3">
+  <div class="container-fluid d-flex justify-content-center align-items-center position-relative">
+
+    <!-- Logo centré -->
+    <a class="navbar-brand mx-4 text-white fw-bold fs-4" href="/index.html" style="font-family: 'Red Rose', cursive;">
+      Femto Films
+    </a>
+
+  <!-- Ligne horizontale des menus desktop -->
+<div class="d-none d-lg-flex align-items-center position-absolute end-0 me-3 gap-4" id="desktopMenus">
+  
+  <!-- Menu Fictions -->
+  <a class="nav-link text-white" href="/fiction_V2.html">Fictions</a>
+
+  <!-- Menu déroulant Services -->
+  <div class="dropdown">
+    <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button"
+       data-bs-toggle="dropdown" aria-expanded="false">
+      Services
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+      <li><a class="dropdown-item" href="/entreprise_V2.html">Professionnel</a></li>
+      <li><a class="dropdown-item" href="/particulier.html">Particulier</a></li>
+    </ul>
+  </div>
+
+  <!-- Menu À propos -->
+  <div class="dropdown">
+    <a class="nav-link dropdown-toggle text-white" href="#" id="aproposDropdown" role="button"
+       data-bs-toggle="dropdown" aria-expanded="false">
+      À propos
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="aproposDropdown">
+      <li><a class="dropdown-item" href="/aboutus.html">Qui sommes-nous ?</a></li>
+      <li><a class="dropdown-item" href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+    <!-- Bouton Burger pour mobile -->
+    <button class="navbar-toggler text-white border-0 position-absolute end-0 me-3" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Offcanvas Mobile (visible sur toutes les pages) -->
+<div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="navbarOffcanvas"
+     aria-labelledby="navbarOffcanvasLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column gap-4">
+
+    <!-- Section Projets -->
+    <div>
+      <div class="fw-bold text-uppercase text-secondary small mb-2">Projets</div>
+      <div class="d-flex flex-column gap-2 ps-3">
+        <a href="/fiction_V2.html" class="text-white">Fictions</a>
+        <a href="/entreprise_V2.html" class="text-white">Commercial</a>
+      </div>
+    </div>
+
+    <!-- Section À propos -->
+    <div>
+      <div class="fw-bold text-uppercase text-secondary small mb-2">À propos</div>
+      <div class="d-flex flex-column gap-2 ps-3">
+        <a href="/aboutus.html" class="text-white">Qui sommes-nous ?</a>
+        <a href="/contact.html" class="text-white">Contact</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
