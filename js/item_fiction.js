@@ -50,6 +50,7 @@ const projects = [
 ];
 
 const container = document.getElementById("projects-container");
+if (!container) return;
 
 projects.forEach(project => {
   const item = document.createElement("div");
