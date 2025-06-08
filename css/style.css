@@ -244,7 +244,6 @@ body {
 @media screen and (max-width: 767.98px) {
   .hero-image-container {
     aspect-ratio: 16 / 9;
-    scale: 1.2;
   }
   .hero-video-container {
     aspect-ratio: 16 / 9;
