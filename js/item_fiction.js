@@ -50,6 +50,7 @@ const projects = [
 ];
 
 const container = document.getElementById("projects-container");
+if (!container) return;
 
 // Rendre les vignettes uniquement lorsqu'un conteneur est présent
 if (container) {
