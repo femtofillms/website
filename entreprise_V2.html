@@ -246,14 +246,33 @@
       container.appendChild(col);
     });
 
-    const videos = document.querySelectorAll(".project-video");
-    videos.forEach(video => {
-      video.addEventListener("mouseenter", () => video.play());
-      video.addEventListener("mouseleave", () => {
-        video.pause();
-        video.currentTime = 0;
+      const videos = document.querySelectorAll(".project-video");
+      videos.forEach(video => {
+        video.addEventListener("mouseenter", () => video.play());
+        video.addEventListener("mouseleave", () => {
+          video.pause();
+          video.currentTime = 0;
+        });
+
+        // Capture the first frame and use it as a poster on mobile
+        video.addEventListener(
+          "loadeddata",
+          () => {
+            try {
+              const canvas = document.createElement("canvas");
+              canvas.width = video.videoWidth;
+              canvas.height = video.videoHeight;
+              const ctx = canvas.getContext("2d");
+              ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+              video.setAttribute("poster", canvas.toDataURL("image/png"));
+              canvas.remove();
+            } catch (e) {
+              console.error("Poster generation failed", e);
+            }
+          },
+          { once: true }
+        );
       });
-    });
 
     const soundToggleBtn = document.getElementById("sound-toggle");
     const icon = soundToggleBtn.querySelector("i");
