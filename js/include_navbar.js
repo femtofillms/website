@@ -1,17 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Charger la navbar
-  fetch("navbar.html")
-    .then(response => response.text())
-    .then(html => {
-      const container = document.getElementById("navbar-container");
-      if (container) container.innerHTML = html;
-    });
+  const fetchAndInsert = (url, id) =>
+    fetch(url)
+      .then(res => res.text())
+      .then(html => {
+        const container = document.getElementById(id);
+        if (container) container.innerHTML = html;
+      });
 
-  // Charger le footer
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(html => {
-      const container = document.getElementById("footer-container");
-      if (container) container.innerHTML = html;
-    });
+  Promise.all([
+    fetchAndInsert("navbar.html", "navbar-container"),
+    fetchAndInsert("footer.html", "footer-container"),
+  ]);
 });
