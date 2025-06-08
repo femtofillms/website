@@ -3,25 +3,25 @@ const projects = [
     title: "Freestyle Aquatique",
     type: "Vidéo sportive",
     videoSrc: "videos/freestyle_amaury_540p.mp4",
-    poster: "images/miniature/freestyle_amaury_540p.jpg"
+    poster: "Images/miniature/freestyle_amaury_540p.jpg"
   },
   {
     title: "Shooting Mariage",
     type: "Backstage",
     videoSrc: "videos/backstage_shooting_mariage_540p.mp4",
-    poster: "images/miniature/backstage_shooting_mariage_540p.jpg"
+    poster: "Images/miniature/backstage_shooting_mariage_540p.jpg"
   },
   {
     title: "Bonne année !",
     type: "Vœux d'entreprise",
     videoSrc: "videos/voeux_inmovere_2024_360p.mp4",
-    poster: "images/miniature/voeux_inmovere_2024_360p.jpg"
+    poster: "Images/miniature/voeux_inmovere_2024_360p.jpg"
   },
   {
     title: "Shooting Mariage",
     type: "Backstage",
     videoSrc: "videos/shoot_ambre_360p.mp4",
-    poster: "images/miniature/shoot_ambre_360p.jpg"
+    poster: "Images/miniature/shoot_ambre_360p.jpg"
   }
 ];
 
