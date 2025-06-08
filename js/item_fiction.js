@@ -51,22 +51,19 @@ const projects = [
 
 const container = document.getElementById("projects-container");
 
-// Rendre les vignettes uniquement lorsqu'un conteneur est présent
-if (container) {
-  projects.forEach(project => {
-    const item = document.createElement("div");
-    item.className = "col-6 col-sm-6 col-md-4 col-lg-3";
-    item.innerHTML = `
-      <a href="${project.link}" class="project-item text-decoration-none text-white d-block">
-        <div class="project-item">
-          <img src="${project.image}" alt="Affiche ${project.title}" class="project-image">
-          <div class="project-info">
-            <div class="project-title">${project.title}</div>
-            <div class="project-meta">${project.type} · ${project.duration}</div>
-          </div>
+projects.forEach(project => {
+  const item = document.createElement("div");
+  item.className = "col-6 col-sm-6 col-md-4 col-lg-3";
+  item.innerHTML = `
+    <a href="${project.link}" class="project-item text-decoration-none text-white d-block">
+      <div class="project-item">
+        <img src="${project.image}" alt="Affiche ${project.title}" class="project-image">
+        <div class="project-info">
+          <div class="project-title">${project.title}</div>
+          <div class="project-meta">${project.type} · ${project.duration}</div>
         </div>
-      </a>
-    `;
-    container.appendChild(item);
-  });
-}
+      </div>
+    </a>
+  `;
+  container.appendChild(item);
+});
