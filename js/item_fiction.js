@@ -1,18 +1,34 @@
 const projects = [
   {
     id: "adlc",
-    title: "ADLC",
+    title: "L'Aube de la Cvilisation",
     type: "Court-métrage",
     duration: "2'20 min",
-    image: "Images/affiches/AFFICHE ADLC VERTICAL V4.jpg",
+    image: "Images/affiches/AFFICHE ADLC VERTICAL V5.jpg",
     link: "fiche-fiction.html?id=adlc",
-    synopsis: "Un thriller <span class='highlight'>captivant</span> qui explore la fragilité des liens familiaux.",
-    videoUrl: "https://www.youtube.com/embed/HOxt9nwNC84",
-    galleryId: "gal_0XSLGpBggjEolcZz",
+    synopsis: "A l'aube de la civilisation, une simple partie d'échec pourrait changer le destin de l'humanité.",
+    videoUrl: "https://www.youtube.com/embed/WiN_KzqAUjw",
+    galleryId: "gal_2n954gmcReykWS76",
     credits: [
-      { role: "Réalisation", value: "Antoine Biguet & Maxime Castello" },
-      { role: "Scénario", value: "Antoine Biguet" },
-      { role: "Casting", value: "Mathis Jakovenko, Emma Scharff" }
+      { role: "Réalisation", value: "Antoine BIGUET & Maxime CASTELLO" },
+      { role: "Scénario", value: "Antoine BIGUET" },
+      { role: "Casting", value: "Mathis JAKOVENKO, Hamzah RAJA" }
+    ]
+  },
+  {
+    id: "gribouille",
+    title: "Jackpot Gribouille",
+    type: "Court-métrage",
+    duration: "2'20 min",
+    image: "Images/affiches/AFFICHE GRIBOUILLE VERTICAL V2.jpg",
+    link: "fiche-fiction.html?id=gribouille",
+    synopsis: "Et si votre chien s'envolait pour vous faire gagner le jackpot ?",
+    videoUrl: "https://www.youtube.com/embed/YguwmreasW8",
+    galleryId: "gal_WlEPWcYq4powEANm",
+    credits: [
+      { role: "Réalisation", value: "Antoine BIGUET & Maxime CASTELLO" },
+      { role: "Scénario", value: "Maxime CASTELLO" },
+      { role: "Casting", value: "Mathis JAKOVENKO, Emma SCHARFF" }
     ]
   },
   {
@@ -20,15 +36,15 @@ const projects = [
     title: "RUPTUR",
     type: "Court-métrage",
     duration: "9 min",
-    image: "Images/affiches/AFFICHE_RUPTUR_9_16_V2_LOW.jpg",
+    image: "Images/affiches/AFFICHE_RUPTUR_VERTICAL_V9.jpg",
     link: "fiche-fiction.html?id=ruptur",
     synopsis: "Un thriller <span class='highlight'>captivant</span> qui explore la fragilité des liens familiaux.",
     videoUrl: "https://www.youtube.com/embed/HOxt9nwNC84",
     galleryId: "gal_0XSLGpBggjEolcZz",
     credits: [
-      { role: "Réalisation", value: "Antoine Biguet & Maxime Castello" },
-      { role: "Scénario", value: "Antoine Biguet" },
-      { role: "Casting", value: "Mathis Jakovenko, Emma Scharff" }
+      { role: "Réalisation", value: "Antoine BIGUET & Maxime CASTELLO" },
+      { role: "Scénario", value: "Antoine BIGUET" },
+      { role: "Casting", value: "Emma SCHARFF, Melanie RAOUL, Hamzah RAJA" }
     ]
   },
   {
@@ -36,17 +52,34 @@ const projects = [
     title: "PULSION",
     type: "Court-métrage",
     duration: "20 min",
-    image: "Images/affiches/AFFICHE_PULSION_V2.png",
+    image: "Images/affiches/AFFICHE_PULSION_V1.jpg",
     link: "fiche-fiction.html?id=pulsion",
     synopsis: "Un drame psychologique <span class='highlight'>intense</span> sur la quête de soi et les relations humaines.",
     videoUrl : "https://www.youtube.com/embed/hjpMtHGCfRs",
     galleryId: "gal_16Luw6mtp9RPk2v6",
     credits: [
-      { role: "Réalisation", value: "Maxime Castello" },
-      { role: "Scénario", value: "Maxime Castello" },
-      { role: "Musique", value: "Alexandre Lambert" }
+      { role: "Réalisation", value: "Maxime CASTELO & Antoine BIGUET" },
+      { role: "Scénario", value: "Maxime CASTELLO" },
+      { role: "Casting", value: "Mathis, JAKOVENKO, Emma Scharff, Paul GILETTE" },
+      { role: "Musique", value: "Alexandre GERARD" }
     ]
-  }
+  },
+  {
+    id: "stearine",
+    title: "Stéarine",
+    type: "Court-métrage",
+    duration: "2'20 min",
+    image: "Images/affiches/AFFICHE_STEARINE_VERTICAL_V1.jpg",
+    link: "fiche-fiction.html?id=stearine",
+    synopsis: "La flamme d'une bougie est aussi fragile que brulante",
+    videoUrl: "https://www.youtube.com/embed/MP8YSToOnIM",
+    galleryId: "gal_WlEPWcYq4powEANm",
+    credits: [
+      { role: "Réalisation", value: "Antoine BIGUET & Maxime CASTELLO" },
+      { role: "Scénario", value: "Antoine BIGUET & Maxime CASTELLO" },
+      { role: "Casting", value: "Mathis JAKOVENKO, Emma SCHARFF" }
+    ]
+  },
 ];
 
 const container = document.getElementById("projects-container");
