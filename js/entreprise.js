@@ -26,7 +26,7 @@ const projects = [
   {
     title: "OBJECITF DAKAR",
     type: "Vidéo sportive",
-    videoSrc: "videos/objectif_dakar_2023_v6 (360p).mp4",
+    videoSrc: "videos/objectif_dakar_2023_v6_(360p).mp4",
     poster: "Images/miniature/objectif_dakar.jpg"
   },
   {
