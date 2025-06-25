@@ -432,3 +432,12 @@ body {
   50% { transform: translateY(10px); }
 }
 
+/* ============================
+   NAVBAR MOBILE OFFCANVAS
+============================ */
+@media (max-width: 991.98px) {
+  #navbarOffcanvas {
+    width: 60%;
+  }
+}
+
