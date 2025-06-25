@@ -22,6 +22,18 @@ const projects = [
     type: "Backstage",
     videoSrc: "videos/shoot_ambre_360p.mp4",
     poster: "Images/miniature/shoot_ambre_360p.jpg"
+  },
+  {
+    title: "OBJECITF DAKAR",
+    type: "Vidéo sportive",
+    videoSrc: "videos/objectif_dakar_2023_v6 (360p).mp4",
+    poster: "Images/miniature/objectif_dakar.jpg"
+  },
+  {
+    title: "Saint Jacques Wetsuits",
+    type: "Films d'entreprise",
+    videoSrc: "videos/lancement_de_produit_sjw_the_firm_v5 (360p).mp4",
+    poster: "Images/miniature/SJW.jpg"
   }
 ];
 
