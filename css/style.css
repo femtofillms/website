@@ -94,9 +94,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .logo-gauche {
+  body.home-page .logo-gauche {
     position: relative;
-    padding: 200px 40px;
+    padding: 100px 40px;
     left: auto;
   }
   .logo-img {
@@ -430,6 +430,14 @@ body {
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
+}
+
+@media (max-width: 767.98px) {
+  body.home-page .footer-auto-bottom {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
 }
 
 /* ============================
