@@ -69,6 +69,7 @@ videos.forEach(video => {
   video.addEventListener("mouseleave", () => {
     video.pause();
     video.currentTime = 0;
+    video.load();        // forces the poster image to show again
   });
 });
 

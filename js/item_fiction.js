@@ -73,7 +73,7 @@ const projects = [
     link: "fiche-fiction.html?id=stearine",
     synopsis: "La flamme d'une bougie est aussi fragile que brulante",
     videoUrl: "https://www.youtube.com/embed/MP8YSToOnIM",
-    galleryId: "gal_WlEPWcYq4powEANm",
+    galleryId: "",
     credits: [
       { role: "Réalisation", value: "Antoine BIGUET & Maxime CASTELLO" },
       { role: "Scénario", value: "Antoine BIGUET & Maxime CASTELLO" },
