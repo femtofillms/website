@@ -1,21 +1,21 @@
 const projects = [
   {
-    title: "Freestyle Aquatique",
-    type: "Vidéo sportive",
-    videoSrc: "videos/freestyle_amaury_540p.mp4",
-    poster: "Images/miniature/freestyle_amaury_540p.jpg"
-  },
-  {
     title: "Shooting Mariage",
     type: "Backstage",
     videoSrc: "videos/backstage_shooting_mariage_540p.mp4",
     poster: "Images/miniature/backstage_shooting_mariage_540p.jpg"
   },
   {
-    title: "Bonne année !",
+    title: "Bonne année 2025 !",
     type: "Vœux d'entreprise",
-    videoSrc: "videos/voeux_inmovere_2024_360p.mp4",
-    poster: "Images/miniature/voeux_inmovere_2024_360p.jpg"
+    videoSrc: "videos/voeux_inmovere_2025_v5 (360p).mp4",
+    poster: "Images/miniature/Miniature_INMOVERE_V1.jpg"
+  },
+  {
+    title: "Saint Jacques Wetsuits",
+    type: "Films d'entreprise",
+    videoSrc: "videos/lancement_de_produit_sjw_the_firm_v5 (360p).mp4",
+    poster: "Images/miniature/SJW.jpg"
   },
   {
     title: "Shooting Mariage",
@@ -24,16 +24,22 @@ const projects = [
     poster: "Images/miniature/shoot_ambre_360p.jpg"
   },
   {
+    title: "Freestyle Aquatique",
+    type: "Vidéo sportive",
+    videoSrc: "videos/freestyle_amaury_540p.mp4",
+    poster: "Images/miniature/Miniature_Amaury_4.PNG"
+  },
+  {
     title: "OBJECITF DAKAR",
     type: "Vidéo sportive",
     videoSrc: "videos/objectif_dakar_2023_v6_(360p).mp4",
-    poster: "Images/miniature/objectif_dakar.jpg"
+    poster: "Images/miniature/Miniature_Dakar_V2.PNG"
   },
   {
-    title: "Saint Jacques Wetsuits",
-    type: "Films d'entreprise",
-    videoSrc: "videos/lancement_de_produit_sjw_the_firm_v5 (360p).mp4",
-    poster: "Images/miniature/SJW.jpg"
+    title: "Bonne année 2024 !",
+    type: "Vœux d'entreprise",
+    videoSrc: "videos/voeux_inmovere_2024_360p.mp4",
+    poster: "Images/miniature/voeux_inmovere_2024_360p.jpg"
   }
 ];
 
