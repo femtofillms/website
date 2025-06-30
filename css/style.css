@@ -88,8 +88,7 @@ body {
   .logo-gauche {
     padding-left: 5%;
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25%;
     right: 30%;
     z-index: 5;
   }
