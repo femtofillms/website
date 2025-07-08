@@ -1,15 +1,15 @@
 const projects = [
   {
-    title: "Shooting Mariage",
-    type: "Backstage",
-    videoSrc: "videos/backstage_shooting_mariage_540p.mp4",
-    poster: "Images/miniature/backstage_shooting_mariage_540p.jpg"
-  },
-  {
     title: "Bonne année 2025 !",
     type: "Vœux d'entreprise",
     videoSrc: "videos/voeux_inmovere_2025_v5 (360p).mp4",
     poster: "Images/miniature/Miniature_INMOVERE_V1.jpg"
+  },
+  {
+    title: "Shooting Editorial",
+    type: "Video Réseaux Sociaux",
+    videoSrc: "videos/backstage_shooting_mariage_540p.mp4",
+    poster: "Images/miniature/Minia_shoot_pascal.jpeg"
   },
   {
     title: "Saint Jacques Wetsuits",
@@ -18,10 +18,10 @@ const projects = [
     poster: "Images/miniature/SJW.jpg"
   },
   {
-    title: "Shooting Mariage",
-    type: "Backstage",
+    title: "Shooting Editorial",
+    type: "Video Réseaux Sociaux",
     videoSrc: "videos/shoot_ambre_360p.mp4",
-    poster: "Images/miniature/shoot_ambre_360p.jpg"
+    poster: "Images/miniature/Minia_shoot_yann.jpeg"
   },
   {
     title: "Freestyle Aquatique",
