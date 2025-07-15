@@ -30,7 +30,7 @@ const projects = [
     poster: "Images/miniature/Miniature_Amaury_4.PNG"
   },
   {
-    title: "OBJECITF DAKAR",
+    title: "OBJECTIF DAKAR",
     type: "Vidéo sportive",
     videoSrc: "videos/objectif_dakar_2023_v6_(360p).mp4",
     poster: "Images/miniature/Miniature_Dakar_V2.PNG"
