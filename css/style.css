@@ -450,3 +450,242 @@ body {
   }
 }
 
+
+/* ============================
+   ABOUT PAGE
+============================ */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 1px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease-out 0.5s forwards;
+}
+.image-container img {
+    max-width: 10%;
+    height: auto;
+}
+
+.bandeau-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.image-left,
+.image-right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-left {
+  background-image: url('Images/SHOOT_MAX_2.jpg');
+}
+
+.image-right {
+  background-image: url('Images/SHOOT_ANTOINE.jpg');
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  text-align: justify;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-mobile {
+  background-image: url('Images/SHOOT_ENSEMBLE.jpg');
+  background-size: cover;
+  background-position: 52%;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  scale: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+      padding: 30vh 25px 10px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container img {
+        max-width: 15%;
+  }
+  .about-container {
+        padding: 30vh 15px 0px 15px;
+  }
+  .bandeau-images {
+    display: none;
+  }
+
+  .image-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .image-container img {
+        max-width: 15%;
+
+  }
+  .about-container {
+        padding: 100vh 15px 10px 15px;
+  }
+}
+
+a {
+  color: #DB185C;
+  text-decoration: none;
+}
+
+/* ============================
+   CONTACT & PARTICULIER PAGES
+============================ */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+    animation: fadeInUp 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.highlight {
+    font-weight: bold;
+    color: #DB185C;
+}
+.logo img {
+    max-width: 120px;
+    margin-top: 30px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+a {
+    color: #FCF0ED;
+    text-decoration: none;
+}
+
+/* ============================
+   HOME PAGE
+============================ */
+.remplissage {
+  height: 85vh;
+}
+@media screen and (max-width: 767px) {
+  .remplissage {
+    height: 5vh;
+    z-index: 0;
+  }
+}
+.btn-outline-claret {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+}
+.btn-outline-claret:hover {
+  background-color: #DB185C;
+  color: white;
+}
+.btn-outline-green {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+}
+.btn-outline-green:hover {
+  background-color: #004447;
+  color: white;
+}
+
+/* ============================
+   FICHE FICTION PAGE
+============================ */
+h1, h2 {
+  font-family: 'Red Rose', sans-serif;
+  color: #DB185C;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.credits-list {
+  padding-left: 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
