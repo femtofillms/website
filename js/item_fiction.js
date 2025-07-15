@@ -1,7 +1,7 @@
 const projects = [
   {
     id: "adlc",
-    title: "L'Aube de la Cvilisation",
+    title: "L'Aube de la Civilisation",
     type: "Court-métrage",
     duration: "2'20 min",
     image: "Images/affiches/AFFICHE ADLC VERTICAL V5.jpg",
