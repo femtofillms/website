@@ -9,7 +9,7 @@ const projects = [
     title: "Shooting Editorial",
     type: "Video Réseaux Sociaux",
     videoSrc: "videos/backstage_shooting_mariage_540p.mp4",
-    poster: "Images/miniature/Minia_shoot_pascal.jpeg"
+    poster: "Images/miniature/Minia_shoot_yann.jpeg" 
   },
   {
     title: "Saint Jacques Wetsuits",
@@ -21,7 +21,7 @@ const projects = [
     title: "Shooting Editorial",
     type: "Video Réseaux Sociaux",
     videoSrc: "videos/shoot_ambre_360p.mp4",
-    poster: "Images/miniature/Minia_shoot_yann.jpeg"
+    poster: "Images/miniature/Minia_shoot_pascal.jpeg"
   },
   {
     title: "Freestyle Aquatique",
