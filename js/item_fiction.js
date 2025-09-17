@@ -1,5 +1,21 @@
 const projects = [
   {
+    id: "allez-y",
+    title: "Allez-y",
+    type: "Court-métrage",
+    duration: "4'44 min",
+    image: "Images/affiches/AFFICHE_ALLEZ-Y.jpeg",
+    link: "fiche-fiction.html?id=allez-y",
+    synopsis: "Deux scénaristes en herbe tentent de faire produire leurs idées de films à un producteur antipathique",
+    videoUrl: "https://www.youtube.com/emed/zbPJuB0iFfg",
+    galleryId: "",
+    credits: [
+      { role: "Réalisation", value: "Maxime CASTELLO & Antoine BIGUET" },
+      { role: "Scénario", value: "Maxime CASTELLO" },
+      { role: "Casting", value: "Colyne PIERFEDERICI, Emma SCHARFF, Mathis JAKOVENKO,  Maxime GIROUD, Johana ISAAC, Alexandre GERARD"  }
+    ]
+  },
+  {
     id: "adlc",
     title: "L'Aube de la Civilisation",
     type: "Court-métrage",
