@@ -1,7 +1,7 @@
 const projects = [
   {
     id: "allez-y",
-    title: "Allez-y",
+    title: "ALLEZ-Y",
     type: "Court-métrage",
     duration: "4'44 min",
     image: "Images/affiches/AFFICHE_ALLEZ-Y.jpeg",
