@@ -7,7 +7,7 @@ const projects = [
     image: "Images/affiches/AFFICHE_ALLEZ-Y.jpeg",
     link: "fiche-fiction.html?id=allez-y",
     synopsis: "Deux scénaristes en herbe tentent de faire produire leurs idées de films à un producteur antipathique",
-    videoUrl: "https://www.youtube.com/emed/zbPJuB0iFfg",
+    videoUrl: "https://www.youtube.com/embed/zbPJuB0iFfg",
     galleryId: "",
     credits: [
       { role: "Réalisation", value: "Maxime CASTELLO & Antoine BIGUET" },
