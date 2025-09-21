@@ -2,7 +2,7 @@ const projects = [
   {
     id: "allez-y",
     title: "ALLEZ-Y",
-    type: "Court-métrage",
+    type: "Mini-série",
     duration: "4'44 min",
     image: "Images/affiches/AFFICHE_ALLEZ-Y.jpeg",
     link: "fiche-fiction.html?id=allez-y",
