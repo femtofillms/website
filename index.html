@@ -1,88 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Femto Films, société de production audiovisuelle provençale, réalise des films d'entreprise et de fiction sur mesure." />
-  <title>Femto Films</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Femto Films - Production audiovisuelle</title>
+    <meta name="description" content="Femto Films, societe de production audiovisuelle. Pub, films corporate, post-production." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet" />
-  <!-- Ton CSS -->
-  <link href="css/style.css" rel="stylesheet" />
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Accueil – Femto Films">
+          FEMTO <span class="logo-thin">FILMS</span>
+        </a>
 
-  <style>
-    .remplissage {
-      height: 85vh;
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="burger" aria-hidden="true"></span>
+        </button>
 
-    }
-    @media screen and (max-width: 767px) {
-      .remplissage {
-        height: 5vh; /* Ajustement pour les petits écrans */
-        z-index: 0;
-      }
-    }
+        <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+          <a href="#top">Accueil</a>
+          <a href="#productions">Productions</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    .btn-outline-claret {
-  color: white;
-  border: 2px solid white;
-  background-color: transparent;
-} 
-.btn-outline-claret:hover {
-      background-color: #DB185C;
-      color: white;
-    }
+    <main id="main">
+      <section id="top" class="section hero">
+        <div class="hero-media" aria-hidden="true">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/video/smartphone-hero-title.mp4" type="video/mp4" media="(max-width: 600px)" />
+            <source src="assets/video/hero-title.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+        </div>
 
-    .btn-outline-green {
-  color: white;
-  border: 2px solid white;
-  background-color: transparent;
-}
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <div class="hero-lines">
+              <h1 class="hero-line">Société de production audiovisuelle</h1>
+              <p class="hero-line-thin"> Publicité <br />  Film Corporate <br /> Fiction</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    .btn-outline-green:hover {
-      background-color: #004447;
-      color: white;
-    }
-  </style>
-</head>
+      <section id="productions" class="section productions">
+        <div class="container">
+          <h2 class="section-title-light">Nos dernières productions</h2>
+        </div>
+        <div class="poster-wall-wrap" aria-label="Mur d'affiches">
+          <div class="poster-wall"></div>
+        </div>
+      </section>
 
-<body class="d-flex flex-column min-vh-100 home-page">
+      <section id="equipe" class="section team">
+        <div class="container">
+          <h2 class="section-title-light">Equipe</h2>
+          <div class="team-grid">
+            <article class="team-card" tabindex="0">
+              <div class="team-photo">
+                <img src="assets/img/team-antoine.jpg" alt="Antoine" loading="lazy" />
+                <div class="team-overlay">
+                  <p>Realisation • Image • Post-production</p>
+                </div>
+              </div>
+              <div class="team-meta">
+                <h3>Antoine</h3>
+                <p class="team-role">Co-Fondateur</p>
+              </div>
+            </article>
+            <article class="team-card" tabindex="0">
+              <div class="team-photo">
+                <img src="assets/img/team-max.jpg" alt="Maxime" loading="lazy" />
+                <div class="team-overlay">
+                  <p>Realisation • Son • Post-production</p>
+                </div>
+              </div>
+              <div class="team-meta">
+                <h3>Maxime</h3>
+                <p class="team-role">Co-Fondateur</p>
+              </div>
+            </article>
+            <article class="team-card" tabindex="0">
+              <div class="team-photo">
+                <img src="assets/img/team-emma.jpg" alt="Emma" loading="lazy" />
+                <div class="team-overlay">
+                  <p>Réseau sociaux • Coordination • Casting</p>
+                </div>
+              </div>
+              <div class="team-meta">
+                <h3>Emma</h3>
+                <p class="team-role">Directrice de Production</p>
+              </div>
+            </article>
+            <article class="team-card" tabindex="0">
+              <div class="team-photo">
+                <img src="assets/img/team-alex.jpg" alt="Alex" loading="lazy" />
+                <div class="team-overlay">
+                  <p>Compositeur • Graphiste • Support plateau</p>
+                </div>
+              </div>
+              <div class="team-meta">
+                <h3>Alex</h3>
+                <p class="team-role">Directeur Artistique</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section id="contact" class="section end-hero" aria-label="Fin de page">
+        <div class="end-hero-kicker" aria-hidden="true">Qui sommes nous</div>
+        <p class="end-hero-paragraph" aria-hidden="true">
+          Femto Films est une société de production française provençale, fondée en 2024 par Antoine Biguet et Maxime Castello, deux amis passionnés par les belles images et les histoires bien racontées.
+          <br>Nous aimons développer un univers fictif, proposer un voyage via les décors et les costumes, chercher l'émotion.
+        </p>
+        <div class="end-hero-title" aria-hidden="true">
+          <div class="end-hero-title-text">Contact</div>
+          <a class="end-hero-email" href="mailto:femtofilms@gmail.com">femtofilms@gmail.com</a>
+          <a class="end-hero-phone" href="tel:+33629806183">+33 6 29 80 61 83</a>
+          <a class="end-hero-instagram" href="https://www.instagram.com/femtofilms/" target="_blank" rel="noopener" aria-label="Instagram Femto Films">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M16.5 3h-9A4.5 4.5 0 0 0 3 7.5v9A4.5 4.5 0 0 0 7.5 21h9A4.5 4.5 0 0 0 21 16.5v-9A4.5 4.5 0 0 0 16.5 3zm3 13.5a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9z"
+              />
+              <path d="M12 7.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.5A3 3 0 1 1 15 12a3 3 0 0 1-3 3z" />
+              <circle cx="17.25" cy="6.75" r="0.9" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
 
-  <main class="flex-grow-1">
+    <footer class="site-footer">
+      <div class="container">
+        <p>Femto Films - Tous droits reserves <span id="year"></span></p>
+      </div>
+    </footer>
 
-  <!-- NAVBAR -->
-  <div id="navbar-container"></div>
-
-  <!-- VIDÉO EN FOND (Desktop uniquement) -->
-  <video autoplay muted loop playsinline class="video-bg d-none d-md-block">
-    <source src="videos/showreel_appareil_v1 (1080p).mp4" type="video/mp4">
-  </video>
-
-
-  <!-- CONTENU CENTRÉ & RESPONSIVE -->
-  <div class="logo-wrapper logo-gauche text-center">
-    <img src="Images/Logo_FEMTO_I_Typo2_RICH_SEASHELL.png" alt="Femto Films" class="logo-img mb-2" />
-    <p class="slogan">société de production audiovisuelle</p>
-
-    <div class="d-flex gap-5 mt-3 flex-wrap justify-content-center justify-content-md-start">
-      <a class="btn btn-outline-green rounded-1" href="entreprise.html">Films d'Entreprise</a>
-      <a class="btn btn-outline-claret rounded-1" href="fiction.html">Films de Fiction</a>
-    </div>
-  </div>
-  </main>
-
-  <!-- FOOTER -->
-<div id="footer-container" style="z-index: 3;"></div>
-  
-
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/include_navbar.js"></script>
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
